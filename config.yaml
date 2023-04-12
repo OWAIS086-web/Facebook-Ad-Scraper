@@ -1,0 +1,111 @@
+# This access_token is a User access token w/ permission to access API
+page_total: 1000   # Should be a maximum of 1,000
+search_total: 5000   # You can query a maximum of 5,000 ads
+
+ad_active_status: ALL  # ACTIVE, INACTIVE, or ALL
+
+# You can provide search terms and/or page IDs and/or funding entity (disclaimer)
+search_terms: all_types
+search_page_ids: all_types
+search_funding_entity: all_types
+
+# Fields for querying all possible metadata from the API
+query_fields:
+- ad_Spend
+- duration
+- duplication
+- country
+- keyword
+- product_url  
+- ad_url
+- image_URL
+  
+
+# Fields which are included in the main CSV, including derived fields
+output_fields:
+- ad_Spend
+- duration
+- duplication
+- country
+- keyword
+- product_url  
+- ad_url
+- image_URL
+
+# Fields for the unnested CSVs
+demo_fields:
+  - ad_id
+  - age
+  - gender
+  - percentage
+
+region_fields:
+  - ad_id
+  - region
+  - percentage
+
+demo_ages:
+  - 18-24
+  - 25-34
+  - 35-44
+  - 45-54
+  - 55-64
+  - 65+
+
+demo_genders:
+  - male
+  - female
+  - unknown
+
+regions:
+  - Alabama
+  - Arkansas
+  - California
+  - Connecticut
+  - Florida
+  - Georgia
+  - Idaho
+  - Illinois
+  - Indiana
+  - Kansas
+  - Kentucky
+  - Maryland
+  - Massachusetts
+  - Minnesota
+  - Mississippi
+  - Nebraska
+  - New Jersey
+  - New Mexico
+  - New York
+  - North Carolina
+  - Ohio
+  - Oregon
+  - South Carolina
+  - South Dakota
+  - Tennessee
+  - Virginia
+  - Washington
+  - West Virginia
+  - Montana
+  - Pennsylvania
+  - Wisconsin
+  - Alaska
+  - Arizona
+  - Colorado
+  - Delaware
+  - Washington, District of Columbia
+  - Hawaii
+  - Iowa
+  - Louisiana
+  - Maine
+  - Michigan
+  - Missouri
+  - North Dakota
+  - Oklahoma
+  - Rhode Island
+  - Nevada
+  - New Hampshire
+  - Texas
+  - Utah
+  - Vermont
+  - Wyoming
